@@ -1,0 +1,11 @@
+finan = float(input('Digite o valor do finaciamento:  '))
+
+if finan >= 20000 :
+    print("Pode parcelar em 60 meses")
+    valor=finan/60
+    
+if finan < 20000 :
+    print(f"Pode parcelar em 36 meses")
+    valor=finan/36
+    
+print("O valor a pagar em cada parcela e {:.2f}".format(valor))
